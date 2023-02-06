@@ -1,0 +1,120 @@
+Holaa mundooo
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Mi primera web</title>
+	</head>
+
+	<body>
+		<h2>Titulo #1</h2>
+		<h1 style="color: #005535;">Titulo con color</h1>
+		<h3>Titulo #2</h3>
+		<p> Parrafooooo ..............................</p>
+		<h1> Middle DJ snake ft. Bipolarsunshine lyric</h1>
+		<p>Staring at two different views on your window ledge<p>
+		<p>Coffee is going cold, it's like time froze<p>
+		<p>There you go wishing, floating down our wishing well<p>
+		<p>It's like I'm always causing problems, causing hell<p>
+		<p>I didn't mean to put you through this, I can tell<p>
+		<p>We cannot sweep this under the carpet (carpet) </p>
+		<p>----------------------------------------------</p>
+
+		<p>I hope that I can turn back the time<p>
+		<p>To make it all alright, all alright for us<p>
+		<p>I'll promise to build a new world for us two<p>
+		<p>With you in the middle...</p>
+		<p>----------------------------------------------</p>
+
+		<p>Ly-ly-ly-ly-lying down beside you, what's going through your head?<p>
+		<p>The silence in the air felt like my soul froze<p>
+		<p>Am I just overthinking feelings I conceal?<p>
+		<p>This gut feeling I'm tryna get off me as well<p>
+		<p>I hope we find our missing pieces and just chill<p>
+		<p>We cannot sweep it under the carpet (carpet)</p>
+		<p>----------------------------------------------</p>
+
+		<p>I hope that I can turn back the time<p>
+		<p>To make it all alright, all alright for us<p>
+		<p>I'll promise to build a new world for us two<p>
+		<p>With you in the middle<p>
+		<!--Commentario en html no code de esta forma !-->
+
+		<a target="_blank"href="g1.jpeg"> click</a>  <!-- Esto es para agregar extenciones de imágenes u otros vínculos!-->
+		<br> <br>  <!-- salto de linea, dividir los espacios !-->
+		<a target="_blank" href="Calendario_2023_pagina.pdf">PDF</a>
+		<br> <br>
+		<button>Botón no hace nada xd</button>
+		<br> <br>
+
+
+		<a  target="_blank"href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIvPT2QuCIOA%26list%3DPLCA2D19E45DF1CAEB%26index%3D3%26t%3D0s&psig=AOvVaw2EeDHLE9J4Ci_SYshitmUA&ust=1675188845358000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCLis5fHy7_wCFQAAAAAdAAAAABAE"><button>Ver video de la canción</button></a>  <!-- linkear algo usando botón!-->
+		<br><br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/EojLF2KEN0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<!-- recurso audiovisual!-->
+
+		<style type="text/css">  <!-- esto ya es css poner estilo!-->
+			
+		</style>
+		
+		<!--------------------INICIO DE SEGUNDA PARTE---------------------------------------------------------!-->
+
+		<h1>BOTONES CON ACCIONES Y MENSAJE<h1>
+			<button>Botón básico</button>
+			<br><br>
+			<button onclick="accion1()" id="bot1"> botón1</button><br>
+
+			<button onclick="accion_2()" id="bot2"> botón2</button><br>
+
+			<h1> DESPLIEGUE DE DATOS</h1>
+			<br><br>
+			<p>Hola, a continuación solicitaremos sus datos, por favor llene los espacios ¡Gracias!</p><br>
+
+			primer nombre:<input type="text" name="recibir primer nombre"id="Tx_1"><br>
+			segundo nombre:<input type="text" name="recibir segundo nombre"id="Tx_2"><br>
+			Primer apellido:<input type="text" name="recibir primer apellido" id="Tx_3"><br>
+			Segundo apellido:<input type="text" name="recibir segundo apellido" id="Tx_4">
+			<br><br>
+
+			<button onclick="action_4()" id="BT4">Concatenar</button>
+			
+			<br><br>
+			
+			Nombre completo:&nbsp;<output id="out_1"> </output>
+			
+			<style type="text/css">
+				body{
+				background-image: url(colorback.png);
+				color: rgb(0, 0, 20);
+			}
+			
+			h1{color: rgba(0,100,0,1.0)}  
+			
+			</style>
+			<script type="text/javascript">
+				function accion1() {
+					alert("hola")
+				}
+			</script>
+			<script type="text/javascript">	
+			
+					
+				function accion_2(){
+					alert("CHAOOO")
+				}
+				
+				function action_4(){
+					var Nombre completo=document.getElementById("Tx_1").value+""+
+										document.getElementById("Tx_2").value+""+
+										document.getElementById("Tx_3").value+""+
+										document.getElementById("Tx_4").value
+					alert(Nombre completo)
+					document.getElementById("out_1").innerHTML=Nombre completo
+
+									}	
+			</script>
+	</body>
+
+</html> 
